@@ -1,0 +1,251 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.v7.widget.CardView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_marginLeft="8dp"
+    android:layout_marginRight="8dp"
+    android:foreground="?android:selectableItemBackground"
+    android:stateListAnimator="@drawable/raise">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="5dp"
+        android:orientation="vertical">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <TextView
+                android:id="@+id/customer_name_text"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentLeft="true"
+                android:layout_alignParentTop="true"
+                android:layout_marginLeft="5dp"
+                android:text="Customer Name" />
+
+            <TextView
+                android:id="@+id/customer_name_semi"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignTop="@+id/customer_name_text"
+                android:layout_marginLeft="5dp"
+                android:layout_toRightOf="@+id/customer_name_text"
+                android:text=":" />
+
+            <TextView
+                android:id="@+id/customer_name"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignTop="@+id/customer_name_semi"
+                android:layout_marginLeft="5dp"
+                android:layout_toRightOf="@+id/customer_name_semi"
+                android:text="New Text"
+                android:textSize="16sp"
+                android:textStyle="bold" />
+
+            <TextView
+                android:id="@+id/customer_mobile_text"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignLeft="@+id/customer_name_text"
+                android:layout_below="@+id/customer_name_text"
+                android:layout_marginTop="5dp"
+                android:text="Mobile" />
+
+            <TextView
+                android:id="@+id/customer_mobile_semi"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignTop="@+id/customer_mobile_text"
+                android:layout_marginLeft="5dp"
+                android:layout_toRightOf="@+id/customer_mobile_text"
+                android:text=":" />
+
+            <TextView
+                android:id="@+id/customer_mobile"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignTop="@+id/customer_mobile_semi"
+                android:layout_marginLeft="5dp"
+                android:layout_toRightOf="@+id/customer_mobile_semi"
+                android:text="New Text"
+                android:textSize="16sp" />
+
+            <TextView
+                android:id="@+id/customer_address_text"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignLeft="@+id/customer_mobile_text"
+                android:layout_below="@+id/customer_mobile_text"
+                android:layout_marginTop="5dp"
+                android:text="Address" />
+
+            <TextView
+                android:id="@+id/customer_address_semi"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignTop="@+id/customer_address_text"
+                android:layout_marginLeft="5dp"
+                android:layout_toRightOf="@+id/customer_address_text"
+                android:text=":" />
+
+            <TextView
+                android:id="@+id/customer_address"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignTop="@+id/customer_address_semi"
+                android:layout_marginLeft="5dp"
+                android:layout_toRightOf="@+id/customer_address_semi"
+                android:text="New Text" />
+
+            <TextView
+                android:id="@+id/meeting_date_text"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignLeft="@+id/customer_address_text"
+                android:layout_below="@+id/customer_address"
+                android:layout_marginTop="5dp"
+                android:text="Meeting Date" />
+
+            <TextView
+                android:id="@+id/meeting_date_semi"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignTop="@+id/meeting_date_text"
+                android:layout_marginLeft="5dp"
+                android:layout_toRightOf="@+id/meeting_date_text"
+                android:text=":" />
+
+            <TextView
+                android:id="@+id/meeting_date"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignTop="@+id/meeting_date_semi"
+                android:layout_marginLeft="5dp"
+                android:layout_toRightOf="@+id/meeting_date_semi"
+                android:text="New Text"
+                android:textSize="16sp" />
+
+            <TextView
+                android:id="@+id/meeting_time_text"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignLeft="@+id/meeting_date_text"
+                android:layout_below="@+id/meeting_date_text"
+                android:layout_marginTop="5dp"
+                android:text="Meeting Time" />
+
+            <TextView
+                android:id="@+id/meeting_time_semi"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignTop="@+id/meeting_time_text"
+                android:layout_marginLeft="5dp"
+                android:layout_toRightOf="@+id/meeting_time_text"
+                android:text=":" />
+
+            <TextView
+                android:id="@+id/meeting_time"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignTop="@+id/meeting_time_semi"
+                android:layout_marginLeft="5dp"
+                android:layout_toRightOf="@+id/meeting_time_semi"
+                android:text="New Text"
+                android:textSize="16sp" />
+        </RelativeLayout>
+
+        <LinearLayout
+            android:id="@+id/confirmation_box"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="8dp"
+            android:orientation="vertical"
+            android:visibility="gone">
+
+            <RadioGroup
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="5dp"
+                android:orientation="vertical">
+
+                <RadioButton
+                    android:id="@+id/attended_rb"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="ATTENDED" />
+
+                <RadioButton
+                    android:id="@+id/willattend_rb"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="WILL ATTEND" />
+
+                <RadioButton
+                    android:id="@+id/notsure_rb"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="NOT SURE" />
+
+                <RadioButton
+                    android:id="@+id/notattending_rb"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="NOT ATTENDING" />
+
+            </RadioGroup>
+
+            <android.support.design.widget.TextInputLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_horizontal">
+
+                <EditText
+                    android:id="@+id/description_Txt"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:ems="10"
+                    android:gravity="top|left"
+                    android:hint="Description"
+                    android:inputType="textMultiLine"
+                    android:maxLines="3"
+                    android:minLines="2"
+                    android:scrollbars="vertical" />
+
+            </android.support.design.widget.TextInputLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="8dp"
+                android:orientation="horizontal"
+                android:paddingBottom="5dp">
+
+                <Button
+                    android:id="@+id/cancel_btn"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="16dp"
+                    android:layout_marginRight="16dp"
+                    android:layout_weight="1"
+                    android:text="CANCEL" />
+
+                <Button
+                    android:id="@+id/submit_btn"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="16dp"
+                    android:layout_marginRight="16dp"
+                    android:layout_weight="1"
+                    android:text="SUBMIT" />
+
+            </LinearLayout>
+
+        </LinearLayout>
+
+    </LinearLayout>
+
+</android.support.v7.widget.CardView>
